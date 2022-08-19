@@ -9,4 +9,5 @@ export const Container = styled.div<{width?: string}>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 `;

@@ -8,5 +8,6 @@ export const theme = {
     success: {color: '#17C964', contrast: '#fff'},
     warning: {color: '#F5A524', contrast: '#fff'},
     error: {color: '#F31260', contraste: '#fff'},
+    label: {color: '#363636', contraste: '#fff'},
     graddient: 'linear-gradient(112deg, #06B7DB -63.59%, #FF4ECD -20.3%, #0072F5 70.46%)',
 }

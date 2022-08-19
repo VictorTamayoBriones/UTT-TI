@@ -3,6 +3,7 @@ import { Button } from "../../components/Button/Buton";
 import { Container } from "../../components/Container/Container";
 import { Form } from "../../components/FormElements/Form/Form";
 import Input from "../../components/FormElements/Input/Input"
+import OverlayLogin from "../../components/OverlayLogin/OverlayLogin";
 
 function Login() {
 
@@ -11,7 +12,7 @@ function Login() {
   }
 
   const [loginData, setLoginData]=useState({
-    matricula: '',
+    user: '',
     password: ''
   })
 
@@ -19,10 +20,11 @@ function Login() {
     <Container width="50%" className="login">
       <h1>UTT - TI</h1>
       <Form>
-        <Input label="Matricula" type="text" name="matricula" value={loginData.matricula} onChange={(e)=>handleChange(e)} />
+        <Input label="User" type="text" name="user" value={loginData.user} onChange={(e)=>handleChange(e)} />
         <Input label="Password" type="password" name="password" value={loginData.password} onChange={(e)=>handleChange(e)} />
         <Button>Login</Button>
       </Form>
+      <OverlayLogin/>
     </Container>
   )
 }
