@@ -4,7 +4,7 @@ import { InputStyled } from "./style"
 function Input({label, type, name, value, onChange}:input) {
   return (
     <InputStyled>
-      <input type={type} name={name} value={value} onChange={onChange} />
+      <input type={type} name={name} value={value} onChange={onChange}required />
       <label >{label}</label>
     </InputStyled>
   )

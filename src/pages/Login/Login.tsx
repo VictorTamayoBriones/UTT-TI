@@ -4,17 +4,19 @@ import { Container } from "../../components/Container/Container";
 import { Form } from "../../components/FormElements/Form/Form";
 import Input from "../../components/FormElements/Input/Input"
 import OverlayLogin from "../../components/OverlayLogin/OverlayLogin";
+import { IloginData } from "../../models/loginData";
 
 function Login() {
 
-  const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
-    console.log(e);
-  }
-
-  const [loginData, setLoginData]=useState({
+  const [loginData, setLoginData]=useState<IloginData>({
     user: '',
     password: ''
-  })
+  });
+
+  const handleChange=({target:{name, value}}:React.ChangeEvent<HTMLInputElement>)=>{
+    setLoginData({...setLoginData, [name]:value});
+  }
+
 
   return (
     <Container width="50%" className="login">

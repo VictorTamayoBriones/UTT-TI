@@ -32,6 +32,12 @@ export const InputStyled = styled.div`
                 transform: translateY(-25px);
             }
         }
+        &:valid{
+            &~label{
+                color: ${ theme.blue.contrast };
+                transform: translateY(-25px);
+            }
+        }
     }
 
 
