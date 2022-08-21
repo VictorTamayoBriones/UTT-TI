@@ -8,7 +8,7 @@ import { IloginData } from "../../models/loginData";
 
 function Login() {
 
-  const [loginData, setLoginData]=useState<IloginData>({
+  const [loginData, setLoginData]=useState<IloginData | {}>({
     user: '',
     password: ''
   });
