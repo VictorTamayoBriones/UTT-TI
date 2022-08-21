@@ -8,7 +8,7 @@ import { IloginData } from "../../models/loginData";
 
 function Login() {
 
-  const [loginData, setLoginData]=useState<IloginData | {}>({
+  const [loginData, setLoginData]=useState({
     user: '',
     password: ''
   });
@@ -16,7 +16,6 @@ function Login() {
   const handleChange=({target:{name, value}}:React.ChangeEvent<HTMLInputElement>)=>{
     setLoginData({...setLoginData, [name]:value});
   }
-
 
   return (
     <Container width="50%" className="login">
