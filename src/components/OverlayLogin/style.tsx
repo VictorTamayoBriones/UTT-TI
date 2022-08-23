@@ -16,7 +16,7 @@ export const Overlay = styled.div`
         &:nth-child(2){
             width: 50%;
             position: absolute;
-            top: 86%;
+            top: 87.6%;
             left: 70%;
         }
     }
