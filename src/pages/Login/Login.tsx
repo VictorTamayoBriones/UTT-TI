@@ -8,21 +8,26 @@ import { IloginData } from "../../models/loginData";
 
 function Login() {
 
-  const [loginData, setLoginData]=useState({
+  const INITAIL_STATE={
     user: '',
     password: ''
-  });
+  }
 
-  const handleChange=({target:{name, value}}:React.ChangeEvent<HTMLInputElement>)=>{
-    setLoginData({...setLoginData, [name]:value});
+  const [loginData, setLoginData]=useState<IloginData>(INITAIL_STATE);
+
+  const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
+    setLoginData({
+      ...loginData,
+      [e.target.name]: e.target.value
+    });
   }
 
   return (
     <Container width="50%" className="login">
       <h1>UTT - TI</h1>
       <Form>
-        <Input label="User" type="text" name="user" value={loginData.user} onChange={(e)=>handleChange(e)} />
-        <Input label="Password" type="password" name="password" value={loginData.password} onChange={(e)=>handleChange(e)} />
+        <Input label="User" type="text" name="user" value={loginData.user} onChange={handleChange} />
+        <Input label="Password" type="password" name="password" value={loginData.password} onChange={handleChange} />
         <Button>Login</Button>
       </Form>
       <OverlayLogin/>
