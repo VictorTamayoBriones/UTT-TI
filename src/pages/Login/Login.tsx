@@ -28,7 +28,7 @@ function Login() {
       <Form>
         <Input label="User" type="text" name="user" value={loginData.user} onChange={handleChange} />
         <Input label="Password" type="password" name="password" value={loginData.password} onChange={handleChange} />
-        <Button>Login</Button>
+        <Button type="submit" >Login</Button>
       </Form>
       <OverlayLogin/>
     </Container>

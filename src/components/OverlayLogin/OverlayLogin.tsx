@@ -1,6 +1,6 @@
 import { Overlay } from "./style"
-import Kraken1 from '../../assets/kraken-t1.svg';
-import Kraken2 from '../../assets/kraken-t2.svg';
+import Kraken1 from '../../assets/kraken-t1.png';
+import Kraken2 from '../../assets/kraken-t2.png';
 
 
 function OverlayLogin() {
