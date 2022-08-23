@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 import { Button } from "../../components/Button/Buton";
 import { Container } from "../../components/Container/Container";
 import { Form } from "../../components/FormElements/Form/Form";
@@ -29,6 +30,7 @@ function Login() {
         <Input label="User" type="text" name="user" value={loginData.user} onChange={handleChange} />
         <Input label="Password" type="password" name="password" value={loginData.password} onChange={handleChange} />
         <Button type="submit" >Login</Button>
+        <Link to="/create-user" >Not have an account? Click here!</Link>
       </Form>
       <OverlayLogin/>
     </Container>
