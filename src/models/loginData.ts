@@ -1,4 +1,4 @@
 export interface IloginData{
-    user: string,
+    matricula: string,
     password: string,
 }
