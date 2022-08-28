@@ -21,4 +21,15 @@ export const Overlay = styled.div`
         }
     }
 
+    @media(min-width:300px){
+        img{
+            display: none;
+        }    
+    }
+
+    @media(min-width:1200px){
+        img{
+            display: block;
+        }    
+    }
 `;

@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { IuserInfo } from "../models/userInfo.model";
-import userSlice  from "./states/user";
-import usersSlice  from "./states/users";
+import  userSlice  from "./states/Users/user";
+import  usersSlice  from "./states/Users/users";
+
 
 export interface AppStore{
     user:{matricula:string, userIsActive: boolean},
