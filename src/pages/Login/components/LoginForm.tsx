@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../../components/Button/Buton";
-import { Form } from "../../../components/FormElements/Form/Form";
-import Input from "../../../components/FormElements/Input/Input";
+import { Button } from "../../../components/Button";
+import { Form } from "../../../components/FormElements/Form";
+import { Input } from "../../../components/FormElements/Input";
 import { LoginContext } from "../context/LoginContext";
 
 function LoginForm() {

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import { Button } from "../../components/Button/Buton"
-import { Container } from "../../components/Container/Container"
-import { Form } from "../../components/FormElements/Form/Form"
-import Input from "../../components/FormElements/Input/Input"
-import OverlayLogin from "../../components/OverlayLogin/OverlayLogin"
+import { Button } from "../../components/Button"
+import { Container } from "../../components/Container"
+import { Form } from "../../components/FormElements/Form"
+import { Input } from "../../components/FormElements/Input"
+import { OverlayLogin } from "../../components/OverlayLogin"
 
 function CreateUser() {
   return (

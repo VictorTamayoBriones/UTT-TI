@@ -1,4 +1,4 @@
-import { Overlay } from "./style"
+import { Overlay } from "./style/style"
 import Kraken1 from '../../assets/kraken-t1.png';
 import Kraken2 from '../../assets/kraken-t2.png';
 

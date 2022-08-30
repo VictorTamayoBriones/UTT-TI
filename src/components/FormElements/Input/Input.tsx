@@ -1,5 +1,5 @@
 import { input } from "../../../models"
-import { InputStyled } from "./style"
+import { InputStyled } from "./style/style"
 
 function Input({label, type, name, value, onChange}:input) {
   return (
