@@ -9,14 +9,14 @@ export const Overlay = styled.div`
 
     img{
         position: absolute;
-        width: 80%;
-        top: -13%;
-        left: -8%;
+        width: 25%;
+        top: -12%;
+        left: -6.9%;
 
         &:nth-child(2){
             width: 50%;
             position: absolute;
-            top: 87.6%;
+            top: 91.8%;
             left: 70%;
         }
     }
