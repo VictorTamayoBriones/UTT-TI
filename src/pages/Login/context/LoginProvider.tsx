@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { IloginData, PrivateRoutes } from "../../../models";
+import { IloginData } from "../../../models";
+import { clearAlert, showAlert } from "../../../redux/states/Alert/alert";
 import { UseAuth } from "../Hooks/useAuth";
 import { LoginContext } from "./LoginContext"
 
@@ -9,10 +11,9 @@ interface Props{
 }
 
 export const LoginProvider = ({children}:Props) =>{
-
+    const dispatch = useDispatch();
     const { auth } = UseAuth();
-    
-    const navigate = useNavigate();
+
     const [loginData, setLoginData]=useState<IloginData>({matricula: '',password:''});
     
     const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
@@ -24,8 +25,23 @@ export const LoginProvider = ({children}:Props) =>{
     
     const handleSubmit = (e:React.FormEvent)=>{
       e.preventDefault();    
-      auth(loginData.matricula, loginData.password );
-      navigate(`/${PrivateRoutes.PRIVATE}`);
+
+      if( loginData.matricula === '' ){
+        dispatch(showAlert({status:'visible', type:'error', message: 'Matricula Requerida'})) 
+        setTimeout(()=>{
+          dispatch(clearAlert(''));
+        }, 4000)
+      }
+
+      if( loginData.password === '' ){
+        
+      }
+
+      if( loginData.matricula === '' && loginData.password === '' ){
+        
+      }else{
+        auth(loginData.matricula, loginData.password );
+      }
     }
 
     return(
