@@ -10,6 +10,7 @@ export const AlertContainer = styled.div<IAlert>`
     text-align: center;
     border-radius: 3px;
     position: absolute;
+    opacity: 0;
     top: 10%;
     left: 35%;
     animation: alertStart 4s cubic-bezier(0, 0, 0, 1.08);
@@ -23,9 +24,10 @@ export const AlertContainer = styled.div<IAlert>`
         0%{
             opacity: 0;
             top: -10%;
-        }10%{
+        }
+        10%{
+            opacity: 1;
             top: 10%;
-
         }
         80%{
             opacity: 1;
