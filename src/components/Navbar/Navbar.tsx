@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import { PrivateRoutes, PublicRoutes } from "../../models";
+import { PublicRoutes } from "../../models";
 import { Nav } from "./styled-components/Nav"
 
 function Navbar() {

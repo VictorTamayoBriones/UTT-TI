@@ -7,7 +7,7 @@ import  usersSlice  from "./states/Users/users";
 
 
 export interface AppStore{
-    user:{matricula:string, userIsActive: boolean},
+    user: {currentUser: IuserInfo, userIsActive: boolean},
     users: IuserInfo[],
     alert: IAlert
 }

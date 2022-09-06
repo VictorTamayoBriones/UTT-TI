@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IuserInfo } from "../../../models";
 
 const INITIAL_STATE = {
-    matricula: '',
+    currentUser: {} as IuserInfo,
     userIsActive: false
 }
 
@@ -10,7 +11,7 @@ export const userSlice = createSlice({
     initialState: INITIAL_STATE,
     reducers:{
         updateCurrentUser:(state, action)=>{
-            state.matricula = action.payload;
+            
             state.userIsActive = true;
         }
     }
