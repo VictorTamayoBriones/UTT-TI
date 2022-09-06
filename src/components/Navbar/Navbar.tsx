@@ -10,7 +10,7 @@ function Navbar() {
     <Nav>
       <h3>User Name</h3>
       <ul>
-          <li><button onClick={()=>navigate(PublicRoutes.LOGIN)} >Logout</button></li>
+          <li><button onClick={()=>navigate(`/${PublicRoutes.LOGIN}`)} >Logout</button></li>
       </ul>
     </Nav>
   )
