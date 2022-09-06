@@ -21,7 +21,7 @@ export const Card = styled.div`
     }
 
     &:hover{
-        box-shadow: 0px 0px 9px ${ theme.blue.contrast };
+        box-shadow: 0px 0px 9px #7d7d7d;
         div{
             svg{
                 scale: 3.5;

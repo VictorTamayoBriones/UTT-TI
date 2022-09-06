@@ -11,7 +11,7 @@ export const userSlice = createSlice({
     initialState: INITIAL_STATE,
     reducers:{
         updateCurrentUser:(state, action)=>{
-            
+            state.currentUser = action.payload
             state.userIsActive = true;
         }
     }

@@ -10,6 +10,11 @@ export const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
 
+    h3{
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
     ul{
         list-style: none;
         button{
