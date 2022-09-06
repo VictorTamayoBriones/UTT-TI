@@ -16,13 +16,23 @@ export const Nav = styled.nav`
     }
 
     ul{
+        display: flex;
+        align-items: center;
         list-style: none;
+        gap: 20px;
+        a{
+            text-decoration: none;
+            letter-spacing: .5px;
+        }
         button{
             background: ${ theme.error.color };
             color: ${ theme.error.contraste };
             border: none;
             border-radius: 3px;
             padding: 3px 9px;
+            &:hover{
+                background: #ca084c;
+            }
         }
     }
 `;
