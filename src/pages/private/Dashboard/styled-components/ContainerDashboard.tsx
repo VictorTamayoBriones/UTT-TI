@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
     width: 100%;
     height: 100vh;
-    padding: 1% 5% 5% 5%;
+    padding: 3% 5% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

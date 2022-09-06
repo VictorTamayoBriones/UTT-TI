@@ -13,7 +13,6 @@ export const Card = styled.div`
     border-radius: 3px;
     cursor: pointer;
     transition: ease all .3s;
-    box-shadow: 0px 0px 9px #000;
 
     p{
         width: 50%;
