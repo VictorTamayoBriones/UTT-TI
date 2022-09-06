@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { Container } from "../../components/Container/Container";
+import { Container } from "../../styled-components/Container/Container";
 import OverlayLogin from "../../components/OverlayLogin/OverlayLogin";
 import LoginForm from "./components/LoginForm";
 import { LoginProvider } from "./context/LoginProvider";

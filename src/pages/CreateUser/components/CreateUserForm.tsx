@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { Button } from "../../../components/Button"
-import { Form } from "../../../components/FormElements/Form"
-import { Input } from "../../../components/FormElements/Input"
+import { Form } from "../../../styled-components/FormElements/Form"
+import { Input } from "../../../styled-components/FormElements/Input"
 import { CreateUserContext } from "../context/createUserContex"
 
 function CreateUserForm() {

@@ -1,4 +1,4 @@
-import { Container } from "../../components/Container"
+import { Container } from "../../styled-components/Container"
 import { OverlayLogin } from "../../components/OverlayLogin"
 import CreateUserForm from "./components/CreateUserForm"
 import { CreateUserProvider } from "./context/createUserProvider"
