@@ -25,7 +25,7 @@ export const Card = styled.div`
         box-shadow: 0px 0px 9px ${ theme.blue.contrast };
         div{
             svg{
-                scale: 5;
+                scale: 3.5;
                 transform: translateX(-20%);
                 opacity: .5;
             }
@@ -43,4 +43,9 @@ export const ImageCard = styled.div`
         scale: 2.5;
         transition: ease-in all .3s;
     }
+`;
+
+export const LabelCard = styled.label`
+    color: ${ theme.blue.contrast };
+    margin-top: -1%;
 `;
