@@ -47,5 +47,5 @@ export const ImageCard = styled.div`
 
 export const LabelCard = styled.label`
     color: ${ theme.blue.contrast };
-    margin-top: -1%;
+    margin-top: -4%;
 `;
