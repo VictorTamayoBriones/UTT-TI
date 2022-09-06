@@ -5,11 +5,11 @@ import { ScheduleProvider } from "./context/ScheduleProvider"
 
 function Schedule() {
   return (
-    <ContainerSection>
+    <ContainerSection overflow="scroll" >
       <ScheduleProvider>
         <TableSchedule/>
+        <BtnsActionsColumns/>
       </ScheduleProvider>
-      <BtnsActionsColumns/>
     </ContainerSection>
   )
 }

@@ -8,12 +8,12 @@ interface Props{
 function TableRow({hours, days}: Props) {
   return (
     <tr>
-        <th>00:00</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+      <td>00:00</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   )
 }
