@@ -1,14 +1,15 @@
+import { TablerIcon } from "@tabler/icons";
 import { useNavigate } from "react-router-dom"
 import { Card, ImageCard } from "./styled-components/Card";
-import { IconCalendarStats } from '@tabler/icons';
 
 interface Props{
-    path: string,
-    text: string,
-    color: string
+  path: string,
+  text: string,
+  color: string,
+  Image: TablerIcon
 }
 
-function CardToSection({path, text, color}:Props) {
+function CardToSection({path, text, color, Image}:Props) {
 
     const navigate = useNavigate();
 
@@ -16,7 +17,7 @@ function CardToSection({path, text, color}:Props) {
       <Card onClick={ ()=>navigate(path) } color={ color } >
         <p>{text}</p>
         <ImageCard>
-          <IconCalendarStats/>
+          <Image/>
         </ImageCard>
       </Card>
     )
