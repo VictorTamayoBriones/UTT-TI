@@ -9,7 +9,7 @@ function TableBody() {
   return (
     <tbody>
       {
-        rows.map( (row, i) => <TableRow key={`row-${i}`} hours={ row.hours } days={ row.days } />)
+        rows.map( (row, i) => <TableRow key={`row-${i}`} id={row.id} hours={ row.hours } days={ row.days } />)
       }
     </tbody>
   )

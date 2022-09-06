@@ -8,19 +8,44 @@ interface Props{
 export const ScheduleProvider = ({children}:Props) =>{
 
     const emptyRow = {
+        id: 0,
         hours: '00:00',
         days:[
+            {
+                teacher: 'Paco',
+                subject: 'PWA',
+                classroom: 'Lab. Redes 1'
+            },
             {
                 teacher: '',
                 subject: '',
                 classroom: ''
-            }
+            },
+            {
+                teacher: '',
+                subject: '',
+                classroom: ''
+            },
+            {
+                teacher: '',
+                subject: '',
+                classroom: ''
+            },
+            {
+                teacher: '',
+                subject: '',
+                classroom: ''
+            },
         ]
     }
 
     const [rows, setRows]=useState([emptyRow])
     
-    const addRow = ()=> setRows([...rows, emptyRow])
+    const addRow = ()=> {
+        let tempRow = emptyRow;
+        tempRow.id = rows.length + 1;
+        setRows([...rows, tempRow])
+    }
 
     const deleteRow = ()=> {
         let finalRow = rows.at(-1);

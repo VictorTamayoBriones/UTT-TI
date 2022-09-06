@@ -1,19 +1,17 @@
 import { IDay } from "../../../../models/IDay"
+import { TableItem } from "../TableItem"
 
 interface Props{
+  id: number,
   hours: string,
   days: IDay[]
 }
 
-function TableRow({hours, days}: Props) {
+function TableRow({id, hours, days}: Props) {
   return (
     <tr>
-      <td>00:00</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{hours}</td>
+      { days.map( (day, i) => <TableItem key={`colum${id}-day-${i}`} data={day} />) }
     </tr>
   )
 }
