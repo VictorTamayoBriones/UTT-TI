@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ScheduleContext } from "../../../../context/ScheduleContext"
+import { ScheduleContext } from "../../../../context/SheduleContext/ScheduleContext"
 import { TableRow } from "../TableRow"
 
 function TableBody() {

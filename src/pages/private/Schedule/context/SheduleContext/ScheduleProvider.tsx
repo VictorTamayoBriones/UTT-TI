@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ScheduleContext } from "./ScheduleContext"
 import { v4 as ID } from 'uuid';
 interface Props{
-    children: JSX.Element[]
+    children: JSX.Element
 }
 
 export const ScheduleProvider = ({children}:Props) =>{
