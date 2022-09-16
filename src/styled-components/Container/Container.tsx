@@ -31,7 +31,6 @@ export const ContainerSection = styled.section<{overflow?: string}>`
     height: 90vh;
     padding: 3% 5% 5% 5%;
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;

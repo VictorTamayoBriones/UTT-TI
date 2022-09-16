@@ -1,4 +1,3 @@
-import { Modal } from "../../../components/Modal"
 import { ContainerSection } from "../../../styled-components/Container"
 import { BtnsActionsColumns } from "./components/bntsActionsColumns"
 import { TableSchedule } from "./components/TableSchedule"
