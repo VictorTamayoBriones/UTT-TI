@@ -1,12 +1,13 @@
 import { IDay } from "../../../../models/IDay"
 interface Props{
-  data: IDay
+  data: IDay,
+  rowId: string,
 }
 
-function TableItem({data}:Props) {
+function TableItem({data, rowId}:Props) {
 
   return (
-    <td onClick={()=>{}} >
+    <td onClick={()=>{console.log(rowId)}} >
       <p>{data.subject}</p>
       <p>{data.teacher}</p>
       <p>{data.classroom}</p>

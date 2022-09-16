@@ -1,7 +1,7 @@
 import { IDay } from "./IDay";
 
 export interface IRow{
-    id: number,
+    id: string,
     hours: string,
     days: IDay[]
 }
