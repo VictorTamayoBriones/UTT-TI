@@ -1,14 +1,14 @@
-import { useId, useState } from "react"
+import { useState } from "react"
 import { ScheduleContext } from "./ScheduleContext"
-
+import { v4 as ID } from 'uuid';
 interface Props{
     children: JSX.Element[]
 }
 
 export const ScheduleProvider = ({children}:Props) =>{
-
+    
     const emptyRow = {
-        id: useId(),
+        id: ID(),
         hours: '00:00',
         days:[
             {
@@ -43,6 +43,7 @@ export const ScheduleProvider = ({children}:Props) =>{
     
     const addRow = ()=> {
         let tempRow = emptyRow;
+        tempRow.id = ID();
         setRows([...rows, tempRow])
     }
 
