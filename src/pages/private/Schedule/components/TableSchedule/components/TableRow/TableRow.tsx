@@ -11,7 +11,7 @@ function TableRow({id, hours, days}: Props) {
   return (
     <tr>
       <td>{hours}</td>
-      { days.map( (day, i) => <TableItem key={`colum${id}-day-${i}`} data={day} rowId={id}/>) }
+      { days.map( (day, i) => <TableItem key={`colum${id}-day-${i}`} data={day} rowId={id} indexDay={i}/>) }
     </tr>
   )
 }

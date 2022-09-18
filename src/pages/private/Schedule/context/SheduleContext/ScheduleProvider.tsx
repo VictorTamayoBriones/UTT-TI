@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { ScheduleContext } from "./ScheduleContext"
 import { v4 as ID } from 'uuid';
+import { IDay } from "../../models/IDay";
 interface Props{
     children: JSX.Element
 }
@@ -47,13 +48,30 @@ export const ScheduleProvider = ({children}:Props) =>{
         setRows([...rows, tempRow])
     }
 
+    const updateRow = (rowId: string, indexday:number, data: IDay) =>{
+        const rowsTemp = rows;
+
+        const rowsUpdate = rowsTemp.map( row => {
+            if( row.id === rowId ){
+                let dayToUpdate = row.days[indexday];
+                dayToUpdate.subject = data.subject;
+                dayToUpdate.teacher = data.teacher;
+                dayToUpdate.classroom = data.classroom;
+            }
+            return row
+        })
+
+        setRows(rowsUpdate);
+        
+    }
+
     const deleteRow = ()=> {
         let finalRow = rows.at(-1);
         setRows([...rows].filter(row => row != finalRow ))
     }
 
     return(
-        <ScheduleContext.Provider value={{rows, addRow, deleteRow}} >
+        <ScheduleContext.Provider value={{rows, addRow, updateRow, deleteRow}} >
             { children }
         </ScheduleContext.Provider>
     )

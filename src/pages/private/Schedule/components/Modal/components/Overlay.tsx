@@ -13,7 +13,6 @@ function Overlay({children}:Props) {
 
     useEffect(()=>{
         setModalIsOpen(modal.modalIsActive)
-        console.log(modal);
     }, [modal])
 
     return (

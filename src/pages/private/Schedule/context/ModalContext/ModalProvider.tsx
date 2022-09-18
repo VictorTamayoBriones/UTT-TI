@@ -13,15 +13,17 @@ export const ModalProvider = ({children}:Props) =>{
         modalDataForm: {
             teacher:'',
             subject: '',
-            classroom: ''
+            classroom: '',
         },
+        indexDay: 0,
         rowId: ''
     })
 
-    const handleModal = (status:boolean, data:IDay, rowId:string)=> {
+    const handleModal = (status:boolean, data:IDay, rowId:string, indexDay: number)=> {
         setModal({
             modalIsActive: status,
             modalDataForm: data,
+            indexDay: indexDay,
             rowId: rowId
         })
     }
@@ -32,8 +34,9 @@ export const ModalProvider = ({children}:Props) =>{
             modalDataForm: {
                 teacher:'',
                 subject: '',
-                classroom: ''
+                classroom: '',
             },
+            indexDay: 0,
             rowId: ''
         })
     }

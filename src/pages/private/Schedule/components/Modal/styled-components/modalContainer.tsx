@@ -8,4 +8,5 @@ export const ModalContainer = styled.div`
     background: ${ theme.blue.color };
     border: solid 1px ${ theme.blue.contrast };
     border-radius: 5px;
+    padding: 12px;
 `;
