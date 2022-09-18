@@ -13,9 +13,9 @@ export const ScheduleProvider = ({children}:Props) =>{
         hours: '00:00',
         days:[
             {
-                teacher: 'Paco',
-                subject: 'PWA',
-                classroom: 'Lab. Redes 1'
+                teacher: '',
+                subject: '',
+                classroom: ''
             },
             {
                 teacher: '',
