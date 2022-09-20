@@ -6,6 +6,7 @@ interface RowState{
     rows: IRow[],
     addRow: ()=>void,
     updateRow: (rowId: string, indexDay:number, data: IDay)=>void,
+    updateTimeInRow: (rowId: string, hours: string[])=>void,
     deleteRow: ()=>void
 }
 

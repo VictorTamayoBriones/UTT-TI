@@ -65,7 +65,19 @@ export const ScheduleProvider = ({children}:Props) =>{
         })
 
         setRows(rowsUpdate);
-        
+    }
+
+    const updateTimeInRow = (rowId: string, hours: string[]) =>{
+        const rowsTemp = rows;
+        const rowsUpdate = rowsTemp.map( row =>{
+
+            if( row.id === rowId ){
+                row.hours.start = hours[0];
+                row.hours.end = hours[1];
+            }
+            return row
+        })
+        setRows(rowsUpdate);
     }
 
     const deleteRow = ()=> {
@@ -74,7 +86,7 @@ export const ScheduleProvider = ({children}:Props) =>{
     }
 
     return(
-        <ScheduleContext.Provider value={{rows, addRow, updateRow, deleteRow}} >
+        <ScheduleContext.Provider value={{rows, addRow, updateRow, deleteRow, updateTimeInRow}} >
             { children }
         </ScheduleContext.Provider>
     )

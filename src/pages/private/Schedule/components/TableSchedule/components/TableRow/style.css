@@ -99,4 +99,6 @@
   .react-timerange-picker__clock-button{
     display: none;
   }
-  
+  .react-timerange-picker__range-divider{
+    cursor: auto;
+  }
