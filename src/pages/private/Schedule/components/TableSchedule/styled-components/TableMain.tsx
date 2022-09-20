@@ -5,6 +5,9 @@ export const TableMain = styled.div`
     table{
         width: 100%;
         text-align: center;
+        .hours{
+            width: 120px;
+        }
         td{
             cursor: pointer;
             height: 100px;
