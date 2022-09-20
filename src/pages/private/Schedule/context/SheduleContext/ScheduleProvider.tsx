@@ -18,27 +18,32 @@ export const ScheduleProvider = ({children}:Props) =>{
             {
                 teacher: '',
                 subject: '',
-                classroom: ''
+                classroom: '',
+                color: '#008080'
             },
             {
                 teacher: '',
                 subject: '',
-                classroom: ''
+                classroom: '',
+                color: '#008080'
             },
             {
                 teacher: '',
                 subject: '',
-                classroom: ''
+                classroom: '',
+                color: '#008080'
             },
             {
                 teacher: '',
                 subject: '',
-                classroom: ''
+                classroom: '',
+                color: '#008080'
             },
             {
                 teacher: '',
                 subject: '',
-                classroom: ''
+                classroom: '',
+                color: '#008080'
             },
         ]
     }
@@ -60,6 +65,7 @@ export const ScheduleProvider = ({children}:Props) =>{
                 dayToUpdate.subject = data.subject;
                 dayToUpdate.teacher = data.teacher;
                 dayToUpdate.classroom = data.classroom;
+                dayToUpdate.color = data.color;
             }
             return row
         })

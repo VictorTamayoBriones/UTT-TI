@@ -16,7 +16,8 @@ function FormModal() {
   const [formState, setFormState]=useState({
     subject: '',
     teacher: '',
-    classroom: ''
+    classroom: '',
+    color: 'teal'
   })
 
   const { updateRow } = useContext(ScheduleContext);
@@ -36,6 +37,7 @@ function FormModal() {
       <Input name="subject" type="text" label="Subject" value={ formState.subject } onChange={ handleChange } />
       <Input name="teacher" type="text" label="Teacher" value={ formState.teacher } onChange={ handleChange } />
       <Input name="classroom" type="text" label="Classroom" value={ formState.classroom } onChange={ handleChange } />
+      <Input name="color" type="color" label="Color" value={formState.color} onChange={ handleChange } />
       <Button type="submit" >Save</Button>
     </Form>
   )
