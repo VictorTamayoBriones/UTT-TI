@@ -21,8 +21,10 @@ export const Nav = styled.nav`
         list-style: none;
         gap: 20px;
         a{
-            text-decoration: none;
             letter-spacing: .5px;
+            &:hover{
+                color: ${theme.warning.color};
+            }
         }
         button{
             background: ${ theme.error.color };

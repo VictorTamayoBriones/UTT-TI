@@ -10,7 +10,10 @@ export const ScheduleProvider = ({children}:Props) =>{
     
     const emptyRow = {
         id: ID(),
-        hours: '00:00',
+        hours:{
+            start: '7:00',
+            end: '8:00'
+        },
         days:[
             {
                 teacher: '',
